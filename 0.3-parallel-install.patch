@@ -1,0 +1,11 @@
+--- origsrc/grilo-plugins-0.3.4/configure.ac	2017-02-14 05:01:25.000000000 -0600
++++ src/grilo-plugins-0.3.4/configure.ac	2017-03-07 12:29:08.879123900 -0600
+@@ -1318,7 +1318,7 @@ AC_SUBST(DEPS_OPENSUBTITLES_LIBS)
+ # ----------------------------------------------------------
+ 
+ IT_PROG_INTLTOOL([0.40.0])
+-GETTEXT_PACKAGE=grilo-plugins
++GETTEXT_PACKAGE=grilo-plugins-${GRL_VERSION}
+ AC_SUBST(GETTEXT_PACKAGE)
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [The domain to use with gettext])
+ 

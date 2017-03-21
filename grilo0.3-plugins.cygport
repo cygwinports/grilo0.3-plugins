@@ -1,0 +1,15 @@
+ORIG_PN="grilo-plugins"
+inherit gnome2
+
+NAME="grilo0.3-plugins"
+VERSION=0.3.4
+RELEASE=1
+CATEGORY="Net"
+SUMMARY="Media discovery framework plugins"
+DESCRIPTION="Grilo is a framework for browsing and searching media content
+from various sources using a single API."
+
+PATCH_URI="0.3-parallel-install.patch"
+
+# dleyna: no dleyna-server, requires gssdp/gupnp
+CYGCONF_ARGS="--disable-dleyna"
